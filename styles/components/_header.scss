@@ -1,14 +1,15 @@
 .main-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-    .nav-list {
-        @include flex(flex-start, center);
-        a{
-            display: inline-block;
-            margin-right: $m1;
-        } 
+  background-color: $background-color;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  .nav-list {
+    @include flex(flex-start, center);
+    a {
+      display: inline-block;
+      margin-right: $m1;
     }
+  }
 }
-

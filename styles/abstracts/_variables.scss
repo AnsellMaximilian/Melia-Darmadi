@@ -1,10 +1,17 @@
 // FONT
 $font-size: 16px;
-$font-family: Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+  Helvetica Neue, sans-serif;
 
 // COLORS
 $primary-text-color: #252525;
+$primary-contrast-text-color: white;
+
+$background-color: white;
+$primary-color: #31e2b8;
+
+// SHADOWS
+$box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
 
 // MARGINS AND PADDINGS
 $m1: 1.25rem;
