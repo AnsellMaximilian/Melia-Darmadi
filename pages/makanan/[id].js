@@ -51,7 +51,7 @@ export async function getStaticProps({ params }) {
 export default function DetailMakanan({ dish }) {
   return (
     <div>
-      <div className="mb">
+      <div className="mb-3">
         <div className={`${styles["header"]} position-relative`}>
           <Link href="/makanan">
             <a className="fixed-element fixed-element-top-right">

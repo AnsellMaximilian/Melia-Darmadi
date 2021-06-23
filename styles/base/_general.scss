@@ -32,6 +32,12 @@
 .m {
   &b {
     margin-bottom: 1rem;
+    &-1 {
+      margin-bottom: $m1;
+    }
+    &-3 {
+      margin-bottom: 2rem;
+    }
   }
 }
 
