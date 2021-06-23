@@ -1,3 +1,62 @@
 .page-title {
-  margin: 0.75rem 0 2rem 0;
+  margin: 3rem 0 2rem 0;
+  text-align: center;
+}
+
+.backdrop {
+  background-color: $primary-color-dim;
+}
+
+//BOX SHADOW
+.box-shadow {
+  box-shadow: $box-shadow;
+}
+
+// TEXT ALIGN
+.align {
+  &-c {
+    text-align: center;
+  }
+  &-l {
+    text-align: left;
+  }
+}
+
+// PADDINGS AND MARGINS
+.p {
+  &b {
+    padding-bottom: 1rem;
+  }
+}
+
+.m {
+  &b {
+    margin-bottom: 1rem;
+  }
+}
+
+// FLOAT
+.float {
+  &-right {
+    float: right;
+  }
+}
+
+// POSIITON
+.position {
+  &-relative {
+    position: relative;
+  }
+}
+
+// FIXED
+.fixed {
+  &-element {
+    position: absolute;
+    z-index: 1;
+    &-top-right {
+      top: 1rem;
+      right: 1rem;
+    }
+  }
 }

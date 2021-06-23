@@ -4,8 +4,17 @@
   color: $primary-text-color;
 }
 
-h1 {
-  font-size: 2rem;
-  text-align: center;
-  font-weight: bold;
+p {
+  line-height: 1.3rem;
+}
+
+h {
+  &1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  &3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }

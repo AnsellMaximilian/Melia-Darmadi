@@ -40,7 +40,7 @@ export async function getStaticProps() {
 export default function Makanan({ dishes }) {
   console.log(dishes);
   return (
-    <div>
+    <div className="container">
       <h1 className="page-title">Pilihan Makanan</h1>
       <div className={styles["dish-list"]}>
         {dishes.map((dish) => (
@@ -58,7 +58,7 @@ export default function Makanan({ dishes }) {
               <p>{dish.description}</p>
             </div>
             <div className={styles["toolbar"]}>
-              <Link href="/">
+              <Link href={`/makanan/${dish.id}`}>
                 <a>
                   <button className="btn btn-primary">Lihat</button>
                 </a>

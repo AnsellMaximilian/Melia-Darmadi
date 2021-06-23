@@ -4,12 +4,12 @@
 .dish-list {
   @include flex(space-around, flex-start, wrap);
   .dish-item {
+    border-radius: $border-radius;
+    overflow: hidden;
     width: 18.125rem;
     max-width: 100%;
     box-shadow: $box-shadow;
     margin-bottom: $m1;
-    // flex-grow: 1;
-    // height: 100%;
     .thumbnail-container {
       width: 100%;
       height: 10.9375rem;

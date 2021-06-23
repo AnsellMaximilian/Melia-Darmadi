@@ -1,0 +1,17 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.header {
+  @include flex($wrap: wrap);
+  &__details {
+    text-align: left;
+    padding: 1rem;
+    flex-basis: 50%;
+  }
+  .thumbnail-container {
+    flex-grow: 1;
+    flex-basis: 400px;
+    height: 450px;
+    position: relative;
+  }
+}

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BrandSVG from "./BrandSVG";
 
-export default function Layout({ children }) {
+export default function Layout({ children, home }) {
   return (
     <div>
       <Head>
@@ -32,9 +32,11 @@ export default function Layout({ children }) {
         </div>
       </header>
 
-      <main className="container">{children}</main>
+      <main>{children}</main>
 
-      <footer></footer>
+      <footer className="main-footer">
+        <div className="container">Hubungi Melia Darmadi:</div>
+      </footer>
     </div>
   );
 }
