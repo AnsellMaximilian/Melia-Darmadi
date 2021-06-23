@@ -2,6 +2,7 @@ import React from "react";
 import { createClient } from "contentful";
 import Image from "next/image";
 import styles from "../../styles/pages/Makanan.module.scss";
+import Link from "next/link";
 
 export async function getStaticProps() {
   const contentfulClient = createClient({
@@ -57,7 +58,11 @@ export default function Makanan({ dishes }) {
               <p>{dish.description}</p>
             </div>
             <div className={styles["toolbar"]}>
-              <button className="btn btn-primary">Lihat</button>
+              <Link href="/">
+                <a>
+                  <button className="btn btn-primary">Lihat</button>
+                </a>
+              </Link>
             </div>
           </div>
         ))}
