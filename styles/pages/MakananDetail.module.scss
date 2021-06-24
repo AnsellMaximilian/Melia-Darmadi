@@ -2,15 +2,18 @@
 @import "../abstracts/variables";
 
 .header {
-  @include flex($wrap: wrap);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   &__details {
+    @include flex($align: flex-start, $dir: column);
     text-align: left;
     padding: 1rem;
-    flex-basis: 50%;
+    align-self: stretch;
+    border: 1rem $primary-color-dim solid;
   }
   .thumbnail-container {
     flex-grow: 1;
-    flex-basis: 25rem;
     height: 28.125rem;
     position: relative;
   }
