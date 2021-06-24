@@ -5,6 +5,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  max-width: 93.75rem;
+  margin: 0 auto;
+  @include breakpoint-down(small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
   &__details {
     @include flex($align: flex-start, $dir: column);
     text-align: left;

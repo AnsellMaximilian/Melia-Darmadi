@@ -1,0 +1,9 @@
+.hero {
+  &-title {
+    font-size: 3rem;
+    font-weight: 500;
+    @include breakpoint-down(small) {
+      font-size: 2rem;
+    }
+  }
+}

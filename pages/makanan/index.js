@@ -29,7 +29,6 @@ export async function getStaticProps() {
     return { id, name, description, imageUrl };
   });
 
-  console.log({ dishes });
   return {
     props: {
       dishes,
@@ -38,7 +37,6 @@ export async function getStaticProps() {
 }
 
 export default function Makanan({ dishes }) {
-  console.log(dishes);
   return (
     <div className="container">
       <h1 className="page-title">Pilihan Makanan</h1>

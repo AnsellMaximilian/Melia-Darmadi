@@ -1,5 +1,4 @@
 import React from "react";
-import { useRouter } from "next/router";
 import { createClient } from "contentful";
 import Image from "next/image";
 import Link from "next/link";
@@ -67,13 +66,22 @@ export default function DetailMakanan({ dish }) {
             />
           </div>
           <div className={styles["header__details"]}>
-            <h1 className="mb ">{dish.name}</h1>
+            <h1 className="mb-1 hero-title">{dish.name}</h1>
             <p className="">{dish.description}</p>
           </div>
         </div>
       </div>
+      <div className="margin-center mb-3">
+        <Image
+          src="/images/woman-cooking.png"
+          alt="woman cooking"
+          className="image image-medium"
+          height={300}
+          width={400}
+        />
+      </div>
       <div className={`${styles["recipe"]} container`}>
-        <h3 className="mb">Resep</h3>
+        <h3 className="mb-1">Resep</h3>
         <div
           className="rich-text"
           dangerouslySetInnerHTML={{
