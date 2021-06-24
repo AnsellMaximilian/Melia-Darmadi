@@ -66,8 +66,8 @@ export default function DetailMakanan({ dish }) {
             />
           </div>
           <div className={styles["header__details"]}>
-            <h1 className="mb-1 hero-title">{dish.name}</h1>
-            <p className="">{dish.description}</p>
+            <h1 className="mb-1 hero__title">{dish.name}</h1>
+            <p className="hero__subtitle">{dish.description}</p>
           </div>
         </div>
       </div>
