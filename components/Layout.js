@@ -3,6 +3,12 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import BrandSVG from "./BrandSVG";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faWhatsapp,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Layout({ children, home }) {
   return (
@@ -34,8 +40,35 @@ export default function Layout({ children, home }) {
 
       <main>{children}</main>
 
-      <footer className="main-footer">
-        <div className="container">Hubungi Melia Darmadi:</div>
+      <footer className="footer">
+        <div className="container">
+          <div className="footer__content">
+            <div className="footer__socials">
+              <a href="#" className="footer__social-item">
+                <div>
+                  <FontAwesomeIcon icon={faInstagram} size={50} />
+                </div>
+              </a>
+              <a href="#" className="footer__social-item">
+                <div>
+                  <FontAwesomeIcon icon={faWhatsapp} />
+                </div>
+              </a>
+              <a href="#" className="footer__social-item">
+                <div>
+                  <FontAwesomeIcon icon={faFacebook} />
+                </div>
+              </a>
+            </div>
+            <div className="footer__brand">
+              <Link href="/">
+                <a>
+                  <BrandSVG negative />
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );

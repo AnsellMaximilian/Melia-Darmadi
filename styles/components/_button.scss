@@ -3,14 +3,22 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: $box-shadow;
   &:hover {
     filter: brightness(0.9);
+  }
+  &-primary,
+  &-secondary {
+    font-weight: bold;
+    text-transform: uppercase;
   }
   &-primary {
     background-color: $primary-color;
     color: $primary-contrast-text-color;
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: $box-shadow;
+  }
+  &-secondary {
+    background-color: $background-color;
+    border: 0.15rem solid $primary-color;
+    color: $primary-color;
   }
 }

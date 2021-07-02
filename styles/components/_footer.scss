@@ -1,6 +1,28 @@
-.main-footer {
+.footer {
   padding: $p1 0;
   margin-top: 3rem;
   background-color: $primary-color;
   color: $primary-contrast-text-color;
+  &__content {
+    @include flex($justify: space-between, $dir: row-reverse);
+  }
+  &__brand {
+    text-align: center;
+  }
+  &__socials {
+    font-size: 1.25rem;
+    @include flex();
+  }
+  &__social-item {
+    display: block;
+    margin-right: $spacing1;
+    &:hover {
+      opacity: 0.75;
+    }
+    & > div {
+      height: 1.75rem;
+      width: 1.75rem;
+      margin-right: 0.5rem;
+    }
+  }
 }

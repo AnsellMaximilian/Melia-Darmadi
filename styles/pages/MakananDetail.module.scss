@@ -21,6 +21,9 @@
   .thumbnail-container {
     flex-grow: 1;
     height: 28.125rem;
+    @include breakpoint-down(small) {
+      height: 80vw;
+    }
     position: relative;
   }
 }

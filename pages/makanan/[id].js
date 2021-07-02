@@ -80,15 +80,17 @@ export default function DetailMakanan({ dish }) {
           width={400}
         />
       </div>
-      <div className={`${styles["recipe"]} container`}>
-        <h3 className="mb-1">Resep</h3>
-        <div
-          className="rich-text"
-          dangerouslySetInnerHTML={{
-            __html: documentToHtmlString(dish.recipe),
-          }}
-        ></div>
-      </div>
+      {dish.recipe !== "Recipe Unavailable" && (
+        <div className={`${styles["recipe"]} container`}>
+          <h3 className="mb-1">Resep</h3>
+          <div
+            className="rich-text"
+            dangerouslySetInnerHTML={{
+              __html: documentToHtmlString(dish.recipe),
+            }}
+          ></div>
+        </div>
+      )}
     </div>
   );
 }
