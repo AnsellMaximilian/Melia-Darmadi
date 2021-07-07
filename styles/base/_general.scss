@@ -26,6 +26,40 @@
 
 // PADDINGS AND MARGINS
 .p {
+  &t {
+    &-1 {
+      padding-top: $spacing1;
+    }
+    &-2 {
+      padding-top: $spacing2;
+    }
+    &-3 {
+      padding-top: $spacing3;
+    }
+    &-4 {
+      padding-top: $spacing4;
+    }
+    &-5 {
+      padding-top: $spacing5;
+    }
+  }
+  &b {
+    &-1 {
+      padding-bottom: $spacing1;
+    }
+    &-2 {
+      padding-bottom: $spacing2;
+    }
+    &-3 {
+      padding-bottom: $spacing3;
+    }
+    &-4 {
+      padding-bottom: $spacing4;
+    }
+    &-5 {
+      padding-bottom: $spacing5;
+    }
+  }
   &y {
     &-1 {
       padding-top: $spacing1;
@@ -142,6 +176,10 @@
     &-center {
       align-items: center;
     }
+
+    &-end {
+      align-items: end;
+    }
   }
 }
 
@@ -149,5 +187,13 @@
 .w {
   &-50 {
     width: 50%;
+  }
+}
+
+// DISPLAY
+
+.d {
+  &-inline-block {
+    display: inline-block;
   }
 }
