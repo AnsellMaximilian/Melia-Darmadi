@@ -1,4 +1,16 @@
 .hero {
+  &.coloured {
+    background-color: rgba($primary-color, 0.75);
+    // color: $primary-contrast-text-color;
+    padding: 3rem 0;
+  }
+  .cta {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.75rem 2.25rem;
+    box-shadow: none;
+    border-radius: 2rem;
+  }
   &__title {
     font-size: 2.75rem;
     font-weight: 700;

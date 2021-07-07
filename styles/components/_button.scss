@@ -15,10 +15,9 @@
   &-primary {
     background-color: $primary-color;
     color: $primary-contrast-text-color;
-  }
-  &-secondary {
-    background-color: $background-color;
-    border: 0.15rem solid $primary-color;
-    color: $primary-color;
+    &-negative {
+      color: $primary-color;
+      $background-color: $primary-contrast-text-color;
+    }
   }
 }

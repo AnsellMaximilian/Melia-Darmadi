@@ -10,7 +10,7 @@
     @include flex(flex-start, center);
     a {
       display: inline-block;
-      margin-right: $spacing2;
+      margin-right: $spacing4;
       color: $dim-primary-text-color;
     }
     a.active,

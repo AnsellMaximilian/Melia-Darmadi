@@ -43,6 +43,10 @@
     &-3 {
       margin-bottom: $spacing3;
     }
+
+    &-5 {
+      margin-bottom: $spacing5;
+    }
   }
 }
 
@@ -69,5 +73,33 @@
       top: 1rem;
       right: 1rem;
     }
+  }
+}
+
+// FLEX
+.flex {
+  display: flex;
+  &-wrap {
+    flex-wrap: wrap;
+  }
+  &-justify {
+    &-center {
+      justify-content: center;
+    }
+    &-around {
+      justify-content: space-around;
+    }
+  }
+  &-align {
+    &-center {
+      align-items: center;
+    }
+  }
+}
+
+// WIDTHS
+.w {
+  &-50 {
+    width: 50%;
   }
 }

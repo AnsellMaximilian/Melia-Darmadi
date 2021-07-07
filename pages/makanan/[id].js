@@ -51,7 +51,7 @@ export async function getStaticProps({ params }) {
 export default function DetailMakanan({ dish }) {
   return (
     <Layout makanan>
-      <div className="mb-3">
+      <div className="mb-5">
         <div className={`${styles["header"]} position-relative`}>
           <Link href="/makanan">
             <a className="fixed-element fixed-element-top-right">
@@ -67,12 +67,12 @@ export default function DetailMakanan({ dish }) {
             />
           </div>
           <div className={styles["header__details"]}>
-            <h1 className="mb-1 hero__title">{dish.name}</h1>
+            <h1 className="mb-3 hero__title">{dish.name}</h1>
             <p className="hero__subtitle">{dish.description}</p>
           </div>
         </div>
       </div>
-      <div className="margin-center mb-3">
+      <div className="margin-center mb-5">
         <Image
           src="/images/woman-cooking.png"
           alt="woman cooking"
@@ -83,7 +83,7 @@ export default function DetailMakanan({ dish }) {
       </div>
       {dish.recipe !== "Recipe Unavailable" && (
         <div className={`${styles["recipe"]} container`}>
-          <h3 className="mb-1">Resep</h3>
+          <h3 className="mb-3">Resep</h3>
           <div
             className="rich-text"
             dangerouslySetInnerHTML={{
