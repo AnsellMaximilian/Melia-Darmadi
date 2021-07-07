@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import BrandSVG from "./BrandSVG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,7 +9,7 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, makanan, makananDetail }) {
   return (
     <div>
       <Head>
@@ -28,10 +27,10 @@ export default function Layout({ children, home }) {
                 </a>
               </Link>
               <Link href="/makanan">
-                <a>Makanan</a>
+                <a className={makanan ? "active" : ""}>Makanan</a>
               </Link>
               <Link href="/">
-                <a>Pudding</a>
+                <a className={makananDetail ? "active" : ""}>Pudding</a>
               </Link>
             </div>
           </nav>
@@ -46,7 +45,7 @@ export default function Layout({ children, home }) {
             <div className="footer__socials">
               <a href="#" className="footer__social-item">
                 <div>
-                  <FontAwesomeIcon icon={faInstagram} size={50} />
+                  <FontAwesomeIcon icon={faInstagram} />
                 </div>
               </a>
               <a href="#" className="footer__social-item">

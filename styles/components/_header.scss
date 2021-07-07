@@ -11,6 +11,11 @@
     a {
       display: inline-block;
       margin-right: $spacing2;
+      color: $dim-primary-text-color;
+    }
+    a.active,
+    a:hover {
+      color: $primary-text-color;
     }
   }
 }

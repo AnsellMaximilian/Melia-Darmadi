@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/pages/MakananDetail.module.scss";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+import Layout from "../../components/Layout";
 
 const contentfulClient = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -49,7 +50,7 @@ export async function getStaticProps({ params }) {
 
 export default function DetailMakanan({ dish }) {
   return (
-    <div>
+    <Layout makanan>
       <div className="mb-3">
         <div className={`${styles["header"]} position-relative`}>
           <Link href="/makanan">
@@ -91,6 +92,6 @@ export default function DetailMakanan({ dish }) {
           ></div>
         </div>
       )}
-    </div>
+    </Layout>
   );
 }
