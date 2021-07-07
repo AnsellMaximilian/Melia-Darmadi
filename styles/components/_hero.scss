@@ -2,7 +2,6 @@
   &.coloured {
     background-color: rgba($primary-color, 0.75);
     // color: $primary-contrast-text-color;
-    padding: 3rem 0;
   }
   .cta {
     font-size: 1.25rem;
@@ -10,6 +9,10 @@
     padding: 0.75rem 2.25rem;
     box-shadow: none;
     border-radius: 2rem;
+    @include breakpoint-down(small) {
+      font-size: 1rem;
+      padding: 0.5rem 2rem;
+    }
   }
   &__title {
     font-size: 2.75rem;

@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <Layout>
       <section className="hero coloured">
-        <div className="container flex flex-justify-around flex-align-center">
-          <div>
+        <div className="container flex flex-justify-between flex-align-center">
+          <div className="py-3">
             <h1 className="hero__title mb-1">Melia Darmadi</h1>
             <p className="hero__subtitle mb-3">
               Menyediakan banyak pilihan makanan
