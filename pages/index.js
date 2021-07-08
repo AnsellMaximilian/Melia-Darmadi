@@ -34,6 +34,38 @@ export default function Home() {
           </svg>
         </div>
       </section>
+      <section className="container">
+        <h2 className="align-c mb-5">Pesan</h2>
+        <div className="flex flex-wrap flex-justify-center">
+          <div className="card mx-3 mb-5">
+            <div className="avatar">
+              <div className="fas fa-store avatar__icon"></div>
+            </div>
+            <div className="card__content">
+              <h3 className="card__title">Tokopedia</h3>
+              <p>Pesan online melalui Tokopedia</p>
+            </div>
+          </div>
+          <div className="card mx-3 mb-5">
+            <div className="avatar">
+              <div className="fas fa-store avatar__icon"></div>
+            </div>
+            <div className="card__content">
+              <h3 className="card__title">Tokopedia</h3>
+              <p>Pesan online melalui Tokopedia</p>
+            </div>
+          </div>
+          <div className="card mx-3 mb-5">
+            <div className="avatar">
+              <div className="fas fa-store avatar__icon"></div>
+            </div>
+            <div className="card__content">
+              <h3 className="card__title">Tokopedia</h3>
+              <p>Pesan online melalui Tokopedia</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }

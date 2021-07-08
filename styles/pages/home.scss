@@ -1,0 +1,31 @@
+.card {
+  width: 300px;
+  max-width: 100%;
+  text-align: center;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  .avatar {
+    position: relative;
+    margin-bottom: 1rem;
+    background-color: rgba($primary-color, 0.75);
+    border-radius: $border-radius;
+    height: 3rem;
+    &__icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $background-color;
+      border-radius: 50%;
+      box-shadow: $box-shadow;
+      font-size: 2rem;
+      padding: 1rem;
+    }
+  }
+  &__title {
+    margin-bottom: $spacing2;
+  }
+  &__content {
+    padding: $spacing3;
+  }
+}
