@@ -21,7 +21,7 @@ export default function Layout({ children, makanan, makananDetail }) {
       </Head>
       <header className="main-header">
         <div className="container">
-          <nav className="navbar">
+          <nav className={`navbar${navOpen ? " open" : ""}`}>
             <Link href="/">
               <a className="nav-brand">
                 <Image

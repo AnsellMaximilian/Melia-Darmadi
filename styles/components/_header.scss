@@ -15,8 +15,17 @@
     .nav-brand {
       margin-right: 2rem;
     }
+    &.open {
+      .nav-list {
+        height: auto;
+      }
+      .toggle-btn {
+        background-color: rgba($primary-color, 0.25);
+      }
+    }
     .toggle-btn {
       cursor: pointer;
+      border-radius: 5px;
       padding: 0.5rem;
       > span {
         &:not(:last-child) {
@@ -31,8 +40,12 @@
       @include breakpoint-down(small) {
         display: block;
       }
+      &:hover {
+        background-color: rgba($primary-color, 0.25);
+      }
     }
   }
+
   .nav-list {
     @include flex(flex-start, center);
     @include breakpoint-down(small) {
@@ -40,9 +53,6 @@
       @include flex($dir: column);
       height: 0;
       overflow-y: hidden;
-      &.open {
-        height: auto;
-      }
       > a {
         width: 100%;
         padding: 1rem 0;
