@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import BrandSVG from "./BrandSVG";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -20,12 +21,17 @@ export default function Layout({ children, makanan, makananDetail }) {
       <header className="main-header">
         <div className="container">
           <nav className="navbar">
+            <Link href="/">
+              <a className="nav-brand">
+                <Image
+                  src={"/images/brand.svg"}
+                  alt="brand"
+                  width={90 * 0.9}
+                  height={50 * 0.9}
+                />
+              </a>
+            </Link>
             <div className="nav-list">
-              <Link href="/">
-                <a>
-                  <BrandSVG />
-                </a>
-              </Link>
               <Link href="/makanan">
                 <a className={makanan ? "active" : ""}>Makanan</a>
               </Link>
