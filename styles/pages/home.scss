@@ -1,4 +1,5 @@
 .card {
+  margin: 0 1rem 3rem;
   width: 300px;
   max-width: 100%;
   text-align: center;
@@ -26,6 +27,6 @@
     margin-bottom: $spacing2;
   }
   &__content {
-    padding: $spacing3;
+    padding: 0 1.25rem 2rem 1.25rem;
   }
 }
