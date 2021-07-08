@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import BrandSVG from "./BrandSVG";
@@ -11,6 +11,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Layout({ children, makanan, makananDetail }) {
+  const [navOpen, setNavOpen] = useState(false);
   return (
     <div>
       <Head>
@@ -31,7 +32,12 @@ export default function Layout({ children, makanan, makananDetail }) {
                 />
               </a>
             </Link>
-            <div className="nav-list">
+            <div className="toggle-btn" onClick={(e) => setNavOpen(!navOpen)}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div className={`nav-list${navOpen ? " open" : ""}`}>
               <Link href="/makanan">
                 <a className={makanan ? "active" : ""}>Makanan</a>
               </Link>
