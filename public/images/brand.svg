@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="496.05917"
+   height="267.99106"
+   viewBox="0 0 131.24899 70.905971"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="pan3.svg"
+   inkscape:export-filename="C:\Users\Ativ\Downloads\pan2.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="498.55596"
+     inkscape:cy="102.99248"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-nodes="true"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:snap-page="true" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-48.980116,-110.48794)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.6266px;line-height:1.25;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.11567"
+       x="50.031879"
+       y="160.04584"
+       id="text891"><tspan
+         sodipodi:role="line"
+         id="tspan889"
+         x="50.031879"
+         y="160.04584"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:44.6266px;font-family:'Berlin Sans FB Demi';-inkscape-font-specification:'Berlin Sans FB Demi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.11567">MELIA</tspan></text>
+    <path
+       id="rect939"
+       style="fill:#000000;stroke-width:7.80967"
+       d="m 48.980116,164.37999 c 2.52327,9.80775 11.39568,17.01392 22.01266,17.01392 H 156.8993 c 10.61693,0 19.48938,-7.20617 22.01265,-17.01392 z" />
+    <path
+       id="path946"
+       style="fill:#000000;stroke-width:5.47682"
+       d="m 111.09803,110.48794 c -1.74491,0 -3.14873,1.40597 -3.14873,3.15088 v 3.04632 H 70.992776 c -10.61694,0 -19.48939,3.54405 -22.01266,8.36753 H 178.91195 c -2.52327,-4.82348 -11.39568,-8.36753 -22.01265,-8.36753 h -36.95653 v -3.04632 c 0,-1.74491 -1.40382,-3.15088 -3.14873,-3.15088 z" />
+  </g>
+</svg>

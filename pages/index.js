@@ -15,7 +15,7 @@ export default function Home() {
               </p>
               <Link href="/makanan">
                 <a className="btn btn-primary-negative cta d-inline-block">
-                  Lihat
+                  Lihat <i className="fas fa-arrow-right"></i>
                 </a>
               </Link>
             </div>
