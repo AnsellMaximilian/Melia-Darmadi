@@ -98,40 +98,23 @@
     padding: $spacing5;
   }
 }
-
+@mixin spacing($type: padding, $side: top, $size: $spacing1) {
+  #{$type}-#{$side}: $size;
+}
 .m {
   &x {
-    &-1 {
-      margin-left: $spacing1;
-      margin-right: $spacing1;
-    }
-    &-2 {
-      margin-left: $spacing2;
-      margin-right: $spacing2;
-    }
-    &-3 {
-      margin-left: $spacing3;
-      margin-right: $spacing3;
-    }
-
-    &-5 {
-      margin-left: $spacing5;
-      margin-right: $spacing5;
+    @each $size, $spacing in $spacings {
+      &-#{$size} {
+        @include spacing(margin, left, $spacing);
+        @include spacing(margin, right, $spacing);
+      }
     }
   }
   &b {
-    &-1 {
-      margin-bottom: $spacing1;
-    }
-    &-2 {
-      margin-bottom: $spacing2;
-    }
-    &-3 {
-      margin-bottom: $spacing3;
-    }
-
-    &-5 {
-      margin-bottom: $spacing5;
+    @each $size, $spacing in $spacings {
+      &-#{$size} {
+        @include spacing(margin, bottom, $spacing);
+      }
     }
   }
   &t {
@@ -219,3 +202,19 @@
     display: inline-block;
   }
 }
+
+// &b {
+//   &-1 {
+//     margin-bottom: $spacing1;
+//   }
+//   &-2 {
+//     margin-bottom: $spacing2;
+//   }
+//   &-3 {
+//     margin-bottom: $spacing3;
+//   }
+
+//   &-5 {
+//     @include spacing(margin, bottom, $spacing5);
+//   }
+// }
